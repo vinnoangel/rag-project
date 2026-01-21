@@ -32,20 +32,22 @@ A robust, local-first Retrieval-Augmented Generation (RAG) system that transform
 
 ## 📂 Project Structure
 
+```bash
 ├── app.py              # Main application logic & UI
 ├── vector_store/       # Directory for persistent FAISS indices (auto-generated)
 ├── requirements.txt    # Project dependencies
 └── README.md           # Documentation
+```
 
 
 ## 🔒 Safety & Security
-Strict Context Adherence: The model is forbidden from using external knowledge; it only answers based on uploaded context.
+* **Strict Context Adherence:** The model is forbidden from using external knowledge; it only answers based on uploaded context.
 
-Hallucination Mitigation: Uses a low 0.2 temperature and limits retrieval to the top-3 most similar chunks.
+* **Hallucination Mitigation:** Uses a low 0.2 temperature and limits retrieval to the top-3 most similar chunks.
 
-Automated Data Purge: A daemon thread deletes folders and cache entries older than 2 hours.
+* **Automated Data Purge:** A daemon thread deletes folders and cache entries older than 2 hours.
 
-Session Isolation: Every upload is isolated via a unique uuid4 session ID.
+* **Session Isolation:** Every upload is isolated via a unique uuid4 session ID.
 
 ---
 
@@ -58,7 +60,7 @@ Session Isolation: Every upload is isolated via a unique uuid4 session ID.
 ### Installation
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/rag-document-intelligence.git](https://github.com/your-username/rag-document-intelligence.git)
+    git clone [https://github.com/vinnoangel/rag-project.git](https://github.com/vinnoangel/rag-project.git)
     cd rag-document-intelligence
     ```
 
