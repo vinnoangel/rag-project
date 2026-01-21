@@ -1,0 +1,5 @@
+huggingface_hub
+gradio
+faiss-cpu
+sentence-transformers
+pypdf
