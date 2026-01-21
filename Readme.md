@@ -69,12 +69,24 @@ A robust, local-first Retrieval-Augmented Generation (RAG) system that transform
     pip install huggingface_hub gradio faiss-cpu sentence-transformers pypdf
     ```
 
-3.  Set up your environment:
-    Make sure you are logged into Hugging Face or have your token configured:
+3.  Hugging Face Auth (Optional but Recommended)
+    If you want to use a Hugging Face token:
+    
+    macOS/Linux
     ```bash
-    huggingface-cli login
+    export HF_TOKEN="your_token_here"
+
+    ```
+    
+    Windows (PowerShell)
+    ```bash
+    $env:HF_TOKEN="your_token_here"
+
     ```
 
 ### Running the App
 ```bash
 python app.py
+
+
+The Gradio UI will start and print a local URL
