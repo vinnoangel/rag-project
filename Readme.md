@@ -87,6 +87,6 @@ A robust, local-first Retrieval-Augmented Generation (RAG) system that transform
 ### Running the App
 ```bash
 python app.py
-
+```
 
 The Gradio UI will start and print a local URL
